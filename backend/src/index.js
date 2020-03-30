@@ -18,6 +18,6 @@ app.use(morgan('dev'));
 app.use(routes);
 
 // Servindo a aplicação
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('Servindo na porta: 3333');
 });
